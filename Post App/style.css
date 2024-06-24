@@ -203,8 +203,20 @@ body {
   flex-direction: row;
   margin-bottom: 1rem;
 }
+.add-comment button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  color: #008ce8;
+  visibility: hidden;
+}
+.add-comment button:hover{
+  color: white;
+}
 
 .add-comment .bx {
+font-size: 13px;
   color: #a5a5a5;
   cursor: pointer;
 }
