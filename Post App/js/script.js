@@ -33,7 +33,7 @@ mainspans.forEach((mainspan, index) => {
 });
 
 let commentbtns = document.querySelectorAll(".left-icon button");
-let showcomment = document.querySelectorAll(".show-comment");
+let showcomment = document.querySelectorAll(".comments");
 
 commentbtns.forEach((commentbtn, index) => {
   commentbtn.addEventListener("click", function () {
