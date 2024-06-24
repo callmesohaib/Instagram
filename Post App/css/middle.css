@@ -143,8 +143,12 @@
   border: none;
   color: white;
 }
-.show-comment {
+.comments{
   display: none;
+  flex-direction: column;
+}
+.show-comment {
+  display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
