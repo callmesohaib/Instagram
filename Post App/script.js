@@ -19,4 +19,29 @@ comments.forEach((comment, index) => {
   });
 });
 
+let morebtns = document.querySelectorAll(".main-span .bx");
+
+let mainspans = document.querySelectorAll(".main-span");
+
+mainspans.forEach((mainspan, index) => {
+  mainspan.addEventListener("mouseover", function () {
+    morebtns[index].style.visibility = "visible";
+  });
+  mainspan.addEventListener("mouseleave", function () {
+    morebtns[index].style.visibility = "hidden";
+  });
+});
+
+let commentbtns = document.querySelectorAll(".left-icon button");
+let showcomment = document.querySelectorAll(".show-comment");
+
+commentbtns.forEach((commentbtn, index) => {
+  commentbtn.addEventListener("click", function () {
+    if (showcomment[index].style.display === "none" || showcomment[index].style.display === "") {
+      showcomment[index].style.display = "flex";
+    } else {
+      showcomment[index].style.display = "none";
+    }
+  });
+});
 
