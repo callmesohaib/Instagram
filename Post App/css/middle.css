@@ -91,12 +91,7 @@
   font-size: 2rem;
   font-weight: 200;
 }
-.left-icon button {
-  color: white;
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
+
 .left-icon .bx:hover {
   color: #686868;
 }
