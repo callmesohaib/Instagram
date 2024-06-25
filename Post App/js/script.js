@@ -32,16 +32,39 @@ mainspans.forEach((mainspan, index) => {
   });
 });
 
-let commentbtns = document.querySelectorAll(".left-icon button");
+let commentbtns = document.querySelectorAll(".left-icon .com");
+let commentdes = document.querySelectorAll(".post-comment");
 let showcomment = document.querySelectorAll(".comments");
 
 commentbtns.forEach((commentbtn, index) => {
   commentbtn.addEventListener("click", function () {
     if (showcomment[index].style.display === "none" || showcomment[index].style.display === "") {
       showcomment[index].style.display = "flex";
+      commentdes[index].style.display = "none";
     } else {
       showcomment[index].style.display = "none";
+      commentdes[index].style.display = "flex";
     }
   });
 });
+
+
+  let heartbtns = document.querySelectorAll(".left-icon .like");
+
+  
+  
+  heartbtns.forEach((heartbtn) => {
+      heartbtn.addEventListener("click", function () {
+          if (heartbtn.style.color === "red") {
+            heartbtn.innerHTML="<i class='bx bx-heart'></i>"
+            heartbtn.style.color = "white";
+          } else {
+            heartbtn.innerHTML="<i class='bx bxs-heart'></i>"
+              heartbtn.style.color = "red";
+          }
+      });
+  });
+
+
+
 
