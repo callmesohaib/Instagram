@@ -1,7 +1,7 @@
 # Instagram
 
 Making a homePage of instagram using HTML , CSS and JavsScript
-
+Backend is also uploaded on the GitHub.
 ## Components
 HTML: Structure the page interface with buttons for each option.
 
